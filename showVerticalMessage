@@ -1,0 +1,21 @@
+function showVerticalMessage(string) {
+
+    const firstLetter = 'm';
+    const maxLength = 10;
+
+    if(string.length >= maxLength){
+        string = string.slice(0,maxLength);
+    }
+
+    if(string.startsWith(firstLetter)){
+         string = firstLetter.toUpperCase() + string.slice(1,maxLength);
+    }
+
+    for (let i=0; i <string.length; i++){
+        console.log(string[i] + "\n");
+    }
+
+}
+
+showVerticalMessage('wow');
+showVerticalMessage('marathon');
