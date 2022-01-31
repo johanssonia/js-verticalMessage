@@ -11,8 +11,8 @@ function showVerticalMessage(string) {
          string = firstLetter.toUpperCase() + string.slice(1,maxLength);
     }
 
-    for (let i=0; i <string.length; i++){
-        console.log(string[i] + "\n");
+    for (let letter of string){
+        console.log(letter + "\n");
     }
 
 }
